@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/gradient"
+    tools:context=".GetNameActivity">
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="100dp"
+        android:layout_marginTop="60dp"
+        android:fontFamily="@font/enjoytoday"
+        android:text="İsimlerinizi Girin"
+        android:textColor="@color/redred"
+        android:textSize="28sp"
+        tools:layout_editor_absoluteX="117dp"
+        tools:layout_editor_absoluteY="28dp" />
+
+    <EditText
+        android:id="@+id/soranEditText"
+        android:layout_width="393dp"
+        android:layout_height="60dp"
+        android:background="@drawable/buttonwhite"
+        android:ems="10"
+        android:hint="Soruyu soran"
+        android:inputType="textPersonName"
+        android:paddingLeft="14dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        tools:layout_editor_absoluteX="9dp"
+        tools:layout_editor_absoluteY="109dp" />
+
+    <EditText
+        android:id="@+id/cevaplayanEditText"
+        android:layout_width="393dp"
+        android:layout_height="60dp"
+        android:background="@drawable/buttonwhite"
+        android:ems="10"
+        android:hint="Soruyu cevaplayan"
+        android:inputType="textPersonName"
+        android:paddingLeft="14dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        tools:layout_editor_absoluteX="9dp"
+        tools:layout_editor_absoluteY="185dp" />
+
+    <TextView
+        android:id="@+id/talimatBaslikText"
+        android:layout_width="123dp"
+        android:layout_height="26dp"
+        android:background="@drawable/buttonred"
+        android:fontFamily="@font/mspgothic"
+        android:text="TALIMATLAR"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        android:layout_marginTop="70dp"
+        android:layout_marginLeft="138dp"
+        tools:layout_editor_absoluteX="144dp"
+        tools:layout_editor_absoluteY="312dp" />
+
+    <TextView
+        android:id="@+id/talimatBilgiText"
+        android:layout_width="361dp"
+        android:layout_height="108dp"
+        android:layout_marginLeft="28dp"
+        android:background="@drawable/buttonwhite"
+        android:fontFamily="@font/mspgothic"
+        android:gravity="center"
+        android:padding="5dp"
+        android:text="Soruyu soran kişi sizler için hazırladığımız özel
+soruları sorarak karşıdakinin kendisi hakkında ne kadar bilgiye sahip
+olduğunu ölçer"
+        android:textColor="@color/redred"
+        android:textSize="22sp"
+        tools:layout_editor_absoluteX="30dp"
+        tools:layout_editor_absoluteY="338dp" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.google.android.gms.ads.AdView
+            android:id="@+id/adView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            app:adSize="BANNER"
+            app:adUnitId="ca-app-pub-3940256099942544/6300978111"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent">
+        </com.google.android.gms.ads.AdView>
+
+        <Button
+            android:id="@+id/baslaButton"
+            android:layout_width="200dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="40dp"
+            android:background="@drawable/buttonwhite"
+            android:fontFamily="@font/boogalo"
+            android:onClick="basla"
+            android:text="Başla"
+            android:textColor="@color/redred"
+            android:textSize="25sp"
+            app:layout_constraintBottom_toTopOf="@+id/adView1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.924"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</LinearLayout>

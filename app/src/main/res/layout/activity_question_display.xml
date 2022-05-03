@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient"
+    tools:context=".questionDisplayActivity">
+
+    <Button
+        android:id="@+id/devametButton"
+        android:layout_width="222dp"
+        android:layout_height="56dp"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/buttonred"
+        android:onClick="devamet"
+        android:text="Devam et"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/adViewdisplay"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.957"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/unutmusButton"
+        app:layout_constraintVertical_bias="0.071" />
+
+    <Button
+        android:id="@+id/unutmusButton"
+        android:layout_width="394dp"
+        android:layout_height="68dp"
+        android:onClick="unutmus"
+        android:text="Unutmuş"
+        android:background="@drawable/buttonwhite"
+        android:textColor="@color/redred"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.529"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bilmediButton"
+        app:layout_constraintVertical_bias="0.132" />
+
+    <Button
+        android:id="@+id/bilmediButton"
+        android:layout_width="394dp"
+        android:layout_height="68dp"
+        android:layout_marginBottom="252dp"
+        android:background="@drawable/buttonwhite"
+        android:onClick="bilmedi"
+        android:text="Bilemedi"
+        android:textColor="@color/redred"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/bildiButton"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/bildiButton" />
+
+    <TextView
+        android:id="@+id/scoreText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/segoesc"
+        android:text="İsimler "
+        android:textColor="@color/redred"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <pl.droidsonroids.gif.GifImageView
+        android:id="@+id/heartgif"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:src="@drawable/heart"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="@+id/scoreText"
+        app:layout_constraintStart_toStartOf="@+id/scoreText"
+        app:layout_constraintTop_toBottomOf="@+id/scoreText" />
+
+    <TextView
+        android:id="@+id/soruSayimText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="32dp"
+        android:fontFamily="@font/segoesc"
+        android:text="Soru:"
+        android:textColor="@color/redred"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/soruText"
+        android:layout_width="0dp"
+        android:layout_height="135dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="95dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="107dp"
+        android:text="SORULAR HAZIRLANIYOR ...."
+        android:gravity="center"
+        android:fontFamily="@font/mspgothic"
+        android:textColor="@color/redred"
+        android:textSize="23sp"
+        app:layout_constraintBottom_toBottomOf="@+id/bildiButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/bildiButton"
+        android:layout_width="394dp"
+        android:layout_height="68dp"
+        android:onClick="bildi"
+        android:text="Bildi"
+        android:background="@drawable/buttonwhite"
+        android:textColor="@color/redred"
+        app:layout_constraintBottom_toTopOf="@+id/bilmediButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.934" />
+
+    <com.google.android.gms.ads.AdView
+        android:id="@+id/adViewdisplay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        app:adSize="BANNER"
+        app:adUnitId="ca-app-pub-3940256099942544/6300978111"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+    </com.google.android.gms.ads.AdView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

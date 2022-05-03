@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/mainbackground"
+    android:orientation="vertical"
+    android:layout_gravity="center"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/segoesc"
+        android:text="Sorularla Tanı"
+        android:textColor="@color/brown"
+        android:textSize="28sp"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="50dp"
+        tools:layout_editor_absoluteX="56dp"
+        tools:layout_editor_absoluteY="16dp" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginTop="60dp">
+
+        <TextView
+            android:id="@+id/diamondNumberText"
+            android:layout_width="wrap_content"
+            android:layout_height="47dp"
+            android:fontFamily="@font/boogalo"
+            android:paddingLeft="4dp"
+            android:text="0"
+            android:gravity="center"
+            android:textColor="@color/purple"
+            android:textSize="25sp"
+            android:layout_marginLeft="40dp"
+            tools:layout_editor_absoluteX="40dp"
+            tools:layout_editor_absoluteY="124dp" />
+
+        <pl.droidsonroids.gif.GifImageView
+            android:id="@+id/diamondGif"
+            android:layout_width="43dp"
+            android:layout_height="47dp"
+            android:src="@drawable/diamond"
+            android:layout_marginLeft="12dp"
+            tools:layout_editor_absoluteX="87dp"
+            tools:layout_editor_absoluteY="111dp" />
+
+        <Button
+            android:id="@+id/reklamButton"
+            android:layout_width="130dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="45dp"
+            android:background="@drawable/buttonwhite"
+            android:drawableRight="@drawable/diamond"
+            android:fontFamily="@font/boogalo"
+            android:text="Daha fazla"
+            android:textColor="@color/purple"
+            android:textStyle="bold"
+            tools:layout_editor_absoluteX="205dp"
+            tools:layout_editor_absoluteY="116dp" />
+
+    </LinearLayout>
+
+
+    <Button
+        android:id="@+id/tekKisilikButton"
+        android:layout_width="370dp"
+        android:layout_height="65dp"
+        android:background="@drawable/buttonwhite"
+        android:drawableRight="@drawable/diamond"
+        android:fontFamily="@font/segoesc"
+        android:onClick="teksorular"
+        android:text="Tek Kişi İçin Sorular   -1000"
+        android:textColor="@color/purple"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="15dp"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="181dp" />
+
+    <Button
+        android:id="@+id/grupSoruButton"
+        android:layout_width="370dp"
+        android:layout_height="65dp"
+        android:background="@drawable/buttonwhite"
+        android:drawableRight="@drawable/diamond"
+        android:fontFamily="@font/segoesc"
+        android:onClick="grupsorular"
+        android:text="Gruplar İçin Sorular  -2000"
+        android:textColor="@color/purple"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="15dp"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="256dp" />
+
+
+    <Button
+        android:id="@+id/sevgiliButton"
+        android:layout_width="370dp"
+        android:layout_height="65dp"
+        android:background="@drawable/buttonwhite"
+        android:drawableRight="@drawable/diamond"
+        android:fontFamily="@font/segoesc"
+        android:gravity="center"
+        android:onClick="sevgilisorular"
+        android:text="Sevgililer İçin Sorular -3000"
+        android:textColor="@color/purple"
+        android:textSize="17sp"
+        android:textStyle="bold"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="15dp"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="336dp" />
+
+  <androidx.constraintlayout.widget.ConstraintLayout
+      android:layout_width="match_parent"
+      android:layout_height="match_parent">
+
+      <com.google.android.gms.ads.AdView
+          android:id="@+id/adView"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_alignParentBottom="true"
+          android:layout_centerHorizontal="true"
+          app:adSize="BANNER"
+          app:adUnitId="ca-app-pub-3940256099942544/6300978111"
+          app:layout_constraintBottom_toBottomOf="parent"
+          app:layout_constraintEnd_toEndOf="parent"
+          app:layout_constraintStart_toStartOf="parent">
+      </com.google.android.gms.ads.AdView>
+
+
+  </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+</LinearLayout>
+

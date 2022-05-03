@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "790720489779",
+    "project_id": "sorularlatani-49f2d",
+    "storage_bucket": "sorularlatani-49f2d.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:790720489779:android:7a337c68e017fe51eaf646",
+        "android_client_info": {
+          "package_name": "com.musaguzel.sorularlatani"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "790720489779-98he3pmdjgkvd043p50qpvt7a6ijr0fv.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA89HK9_u9F8dtW3-1DgxRaKpHcTWL5YHE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "790720489779-98he3pmdjgkvd043p50qpvt7a6ijr0fv.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
